@@ -5,10 +5,9 @@ clone_folder: c:\gopath\src\github.com\vektra\mockery
 environment:
   GOPATH: c:\gopath
   matrix:
-    - environment:
-      GOVERSION: 1.7.5
-    - environment:
-      GOVERSION: 1.8
+    - GOVERSION: "1.22.9"
+    - GOVERSION: "1.23.4"
+    - GOVERSION: "1.24.0"
 
 init:
   - git config --global core.autocrlf input
